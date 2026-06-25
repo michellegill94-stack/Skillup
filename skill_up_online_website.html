@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUP - 21st Century Skills & Professional Growth Program</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .coral-gradient {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+        }
+        .glow-orange {
+            position: relative;
+        }
+        .glow-orange::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, #f97316, #ef4444);
+            filter: blur(20px);
+            opacity: 0.15;
+            z-index: -1;
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body class="bg-[#04060a] text-gray-100 min-h-screen selection:bg-orange-500 selection:text-white overflow-x-hidden">
+
+    <!-- Ambient glowing backgrounds -->
+    <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-orange-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-10 w-[450px] h-[450px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-40 bg-[#04060a]/80 backdrop-blur-md border-b border-gray-900/80 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-red-500 to-orange-500 flex items-center justify-center font-extrabold text-white text-xl shadow-md shadow-orange-500/20">
+                    S
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight heading-font bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                        Skill<span class="text-orange-500">UP</span>
+                    </span>
+                    <span class="hidden sm:inline-block text-[10px] text-gray-500 tracking-wider uppercase ml-2 border-l border-gray-800 pl-2">Academy</span>
+                </div>
+            </div>
+            
+            <!-- Web Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                <a href="#curriculum" class="hover:text-white transition duration-200">What You'll Learn</a>
+                <a href="#instructor" class="hover:text-white transition duration-200">Instructor</a>
+                <a href="#schedule" class="hover:text-white transition duration-200">Schedule</a>
+                <a href="#register" class="hover:text-white transition duration-200 font-semibold text-orange-400">Register Now</a>
+                <a href="#faqs" class="hover:text-white transition duration-200">FAQs</a>
+            </div>
+
+            <!-- Call Info & Quick Registration Link -->
+            <div class="flex items-center space-x-3">
+                <a href="tel:0343-5942243" class="hidden sm:flex items-center space-x-1 text-xs text-gray-400 hover:text-white transition duration-200 bg-gray-900/60 px-3 py-1.5 rounded-full border border-gray-800">
+                    <span>📞 0343-5942243</span>
+                </a>
+                <a href="#register" class="px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 transition shadow-lg shadow-orange-500/10 text-center">
+                    Register Online
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 pt-10 pb-16 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+        
+        <!-- Left Hero Column -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+            <div class="inline-flex items-center space-x-2 bg-orange-500/10 border border-orange-500/20 px-3.5 py-1.5 rounded-full text-xs text-orange-300">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="font-bold tracking-wider uppercase">Registration Open for July Cohort</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] heading-font text-white">
+                Master 21st Century <br>
+                <span class="bg-gradient-to-r from-red-500 via-orange-500 to-amber-400 bg-clip-text text-transparent">
+                    Skills & Professional Growth
+                </span>
+            </h1>
+            
+            <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl">
+                Step into global professional standards. Acquire high-demand public speaking dynamics, confidence frameworks, resume mechanics, and executive business etiquettes necessary to succeed in modern industry sectors.
+            </p>
+
+            <!-- Real-time Trust Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 text-sm">
+                <div class="flex items-center space-x-2 text-gray-400">
+                    <span class="text-lg">🎯</span>
+                    <span>100% Practical Course</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-400">
+                    <span class="text-lg">👥</span>
+                    <span>Live Interactive Classes</span>
+                </div>
+                <div class="flex items-center space-x-2 text-gray-400">
+                    <span class="text-lg">🎓</span>
+                    <span>Verified Certification</span>
+                </div>
+            </div>
+
+            <!-- Major CTA Block -->
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="#register" class="px-8 py-4 rounded-xl text-white font-bold bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 shadow-xl shadow-orange-500/20 active:scale-[0.98] transition-all text-center text-sm md:text-base">
+                    Claim Early Bird Seat (Save Rs. 500)
+                </a>
+                <a href="#curriculum" class="px-6 py-4 rounded-xl text-gray-300 font-semibold bg-gray-950 hover:bg-gray-900 border border-gray-800 hover:text-white transition duration-200 text-center text-sm">
+                    Explore Syllabus ↓
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column: Program Highlights Info Ticket -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-gray-900/90 to-gray-950 border border-gray-800 rounded-3xl p-6 md:p-8 space-y-6 glow-orange relative">
+            
+            <div class="flex justify-between items-center pb-4 border-b border-gray-800/80">
+                <div>
+                    <span class="text-xs text-orange-400 font-bold uppercase tracking-widest block">Class Schedule</span>
+                    <span class="text-lg font-extrabold text-white heading-font">Begins July 6, 2026</span>
+                </div>
+                <span class="bg-red-500/10 text-red-400 font-semibold text-xs px-2.5 py-1 rounded-full border border-red-500/20">
+                    3-Week Program
+                </span>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Session timings detail -->
+                <div class="space-y-2">
+                    <span class="text-xs text-gray-400 uppercase tracking-wider font-bold block">Available Daily Slots:</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="bg-gray-950/80 border border-gray-800 p-3 rounded-2xl">
+                            <span class="text-xs text-orange-400 font-bold block">☀️ Slot A</span>
+                            <span class="text-sm font-bold text-white block mt-0.5">1:00 PM - 2:00 PM</span>
+                            <span class="text-[10px] text-gray-500">Mon - Thurs</span>
+                        </div>
+                        <div class="bg-gray-950/80 border border-gray-800 p-3 rounded-2xl">
+                            <span class="text-xs text-amber-400 font-bold block">🌙 Slot B</span>
+                            <span class="text-sm font-bold text-white block mt-0.5">7:30 PM - 8:30 PM</span>
+                            <span class="text-[10px] text-gray-500">Mon - Thurs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration deadline banner -->
+                <div class="bg-amber-500/5 border border-amber-500/20 rounded-2xl p-4 flex gap-3 items-start">
+                    <span class="text-xl mt-0.5">⚠️</span>
+                    <div>
+                        <span class="text-xs text-amber-300 font-bold uppercase block tracking-wider">Early Registration Deadline</span>
+                        <p class="text-xs text-gray-400 mt-1 leading-relaxed">
+                            Register on or before <strong class="text-white">July 2, 2026</strong> to unlock the promotional discount.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-gray-800/80 flex items-center justify-between">
+                <div>
+                    <span class="text-xs text-gray-500 line-through">Regular: Rs. 3,500</span>
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-2xl font-black text-white heading-font">Rs. 3,000</span>
+                        <span class="text-xs text-orange-400 font-bold">Only</span>
+                    </div>
+                </div>
+                <a href="#register" class="px-5 py-3 rounded-xl bg-white text-gray-950 font-bold hover:bg-gray-100 transition shadow-lg text-xs text-center">
+                    Lock-In Price Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="curriculum" class="bg-gray-950/40 py-20 border-y border-gray-900 relative z-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs text-orange-400 font-bold uppercase tracking-widest block">Interactive Syllabus</span>
+                <h2 class="text-3xl md:text-4xl font-bold heading-font text-white">What You'll Accomplish</h2>
+                <p class="text-gray-400 text-sm md:text-base">
+                    An intensive, structured learning pathway built from the ground up. Click each module card below to reveal the interactive day-by-day lesson roadmap.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                
+                <!-- Module 1 Card (Interactive Accordion Style) -->
+                <div onclick="toggleModule('module1-details')" class="bg-gray-900/40 border border-gray-800/80 p-6 md:p-8 rounded-3xl hover:border-red-500/40 transition cursor-pointer group">
+                    <div class="flex items-start justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center text-2xl text-red-400 group-hover:scale-110 transition duration-300">
+                            🎙️
+                        </div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Module 01</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-4 heading-font flex justify-between items-center">
+                        <span>Effective Communication & Public Speaking</span>
+                        <span class="text-red-400 text-sm transition-transform duration-300" id="module1-details-arrow">▼</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        Conquer voice anxiety and dominate speaking roles. Understand body language, interactive audience engagement tactics, tone adjustment, and clear presentation formulas.
+                    </p>
+                    
+                    <!-- Expanded Module Timeline details -->
+                    <div id="module1-details" class="hidden mt-4 space-y-3 pt-4 border-t border-gray-800/60">
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-red-400 tracking-wider">Days 1 to 3</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Voice Modulation Dynamics</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Harness vocal variety, master pauses, and configure perfect pacing parameters to keep listeners hooked.</p>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-red-400 tracking-wider">Days 4 to 6</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Overcoming Stage & Mic Fright</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Step-by-step cognitive tools and physically active breathing layouts to dismantle public performance anxiety.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center justify-between text-xs text-gray-400 pt-3 border-t border-gray-800/30">
+                        <span class="flex items-center gap-1.5"><span class="text-red-400">⚡</span> Live Practice Activities</span>
+                        <span class="text-red-400 group-hover:translate-x-1 transition duration-200">Tap to expand ➔</span>
+                    </div>
+                </div>
+
+                <!-- Module 2 Card -->
+                <div onclick="toggleModule('module2-details')" class="bg-gray-900/40 border border-gray-800/80 p-6 md:p-8 rounded-3xl hover:border-orange-500/40 transition cursor-pointer group">
+                    <div class="flex items-start justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-2xl text-orange-400 group-hover:scale-110 transition duration-300">
+                            👔
+                        </div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Module 02</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-4 heading-font flex justify-between items-center">
+                        <span>Soft Skills & Professional Etiquette</span>
+                        <span class="text-orange-400 text-sm transition-transform duration-300" id="module2-details-arrow">▼</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        Navigate corporate teams with absolute confidence. Build essential collaboration structures, leadership soft-skills, conflict resolution, and written executive correspondence rules.
+                    </p>
+
+                    <!-- Expanded Module Timeline details -->
+                    <div id="module2-details" class="hidden mt-4 space-y-3 pt-4 border-t border-gray-800/60">
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-orange-400 tracking-wider">Days 7 to 9</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Professional Email Mechanics</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Structure formal layouts, design subject headers that get opened, and use persuasive action calls.</p>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-orange-400 tracking-wider">Days 10 to 12</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Workplace Hierarchy Dynamics</p>
+                            <p class="text-[11px] text-gray-400 mt-1">How to deliver feedback upward, collaborate cross-departmentally, and conduct assertive negotiation.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center justify-between text-xs text-gray-400 pt-3 border-t border-gray-800/30">
+                        <span class="flex items-center gap-1.5"><span class="text-orange-400">⚡</span> Corporate Scenarios</span>
+                        <span class="text-orange-400 group-hover:translate-x-1 transition duration-200">Tap to expand ➔</span>
+                    </div>
+                </div>
+
+                <!-- Module 3 Card -->
+                <div onclick="toggleModule('module3-details')" class="bg-gray-900/40 border border-gray-800/80 p-6 md:p-8 rounded-3xl hover:border-amber-500/40 transition cursor-pointer group">
+                    <div class="flex items-start justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-2xl text-amber-400 group-hover:scale-110 transition duration-300">
+                            📄
+                        </div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Module 03</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-4 heading-font flex justify-between items-center">
+                        <span>Resume Writing & Interview Prep</span>
+                        <span class="text-amber-400 text-sm transition-transform duration-300" id="module3-details-arrow">▼</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        Stand out directly in applicant tracking systems (ATS). Learn to write custom resumes that land job opportunities, and practice dynamic behavioral mock interview responses.
+                    </p>
+
+                    <!-- Expanded Module Timeline details -->
+                    <div id="module3-details" class="hidden mt-4 space-y-3 pt-4 border-t border-gray-800/60">
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-amber-400 tracking-wider">Days 13 to 15</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">ATS-Optimized Resume Formatting</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Structure keywords correctly, draft powerful professional experience bullets, and dodge filtering errors.</p>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-amber-400 tracking-wider">Days 16 to 18</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">STAR Interview Response Technique</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Format your answers seamlessly using Situation, Task, Action, and Result formats to ace behavior tests.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center justify-between text-xs text-gray-400 pt-3 border-t border-gray-800/30">
+                        <span class="flex items-center gap-1.5"><span class="text-amber-400">⚡</span> Live Mock Assessments</span>
+                        <span class="text-amber-400 group-hover:translate-x-1 transition duration-200">Tap to expand ➔</span>
+                    </div>
+                </div>
+
+                <!-- Module 4 Card -->
+                <div onclick="toggleModule('module4-details')" class="bg-gray-900/40 border border-gray-800/80 p-6 md:p-8 rounded-3xl hover:border-yellow-500/40 transition cursor-pointer group">
+                    <div class="flex items-start justify-between">
+                        <div class="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center text-2xl text-yellow-400 group-hover:scale-110 transition duration-300">
+                            ✨
+                        </div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Module 04</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-4 heading-font flex justify-between items-center">
+                        <span>Confidence Building & Presentation</span>
+                        <span class="text-yellow-400 text-sm transition-transform duration-300" id="module4-details-arrow">▼</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        Synthesize high-converting slide structures and pitch formats. Build mental resilience, dynamic posture cues, and delivery dynamics to engage any board meeting.
+                    </p>
+
+                    <!-- Expanded Module Timeline details -->
+                    <div id="module4-details" class="hidden mt-4 space-y-3 pt-4 border-t border-gray-800/60">
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-yellow-400 tracking-wider">Days 19 to 21</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Body Language Cues & Delivery</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Implement strong, confident non-verbal cues. Maintain engaging eye contact even on webcams.</p>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl border border-gray-900">
+                            <span class="text-[10px] uppercase font-bold text-yellow-400 tracking-wider">Graduation</span>
+                            <p class="text-xs text-white font-semibold mt-0.5">Final Pitch Presentation Day</p>
+                            <p class="text-[11px] text-gray-400 mt-1">Deliver a live presentation directly to the mentor cohort to achieve your completion certification.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex items-center justify-between text-xs text-gray-400 pt-3 border-t border-gray-800/30">
+                        <span class="flex items-center gap-1.5"><span class="text-yellow-400">⚡</span> Capstone Presentation</span>
+                        <span class="text-yellow-400 group-hover:translate-x-1 transition duration-200">Tap to expand ➔</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Profile Section -->
+    <section id="instructor" class="py-20 relative z-10 max-w-5xl mx-auto px-4 scroll-mt-24">
+        <div class="bg-gradient-to-r from-gray-900/50 via-gray-950 to-gray-900/50 border border-gray-800/80 rounded-3xl p-8 md:p-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Dual Fallback Image Frame -->
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="relative group">
+                        <!-- Premium back glow effect -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-red-500 via-orange-500 to-amber-400 rounded-3xl blur-xl opacity-40 group-hover:opacity-60 transition duration-500"></div>
+                        
+                        <!-- Main container with dual fallback design to prevent broken layout text -->
+                        <div class="w-64 h-80 rounded-3xl border-2 border-orange-500/30 overflow-hidden relative shadow-2xl transition duration-500 transform group-hover:scale-[1.02] bg-[#1a1f2c] flex items-center justify-center">
+                            
+                            <!-- SVG Placeholder that displays automatically if image is offline or not found -->
+                            <div id="imagePlaceholder" class="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-950 p-6 text-center">
+                                <svg class="w-16 h-16 text-gray-600 mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                                <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white font-extrabold text-[10px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow-md">
+                                    Lead Coach
+                                </span>
+                            </div>
+
+                            <!-- Image Component -->
+                            <img 
+                                id="instructorPic"
+                                src="PNG%20image_2.jpeg" 
+                                alt="Resource Person" 
+                                class="w-full h-full object-cover object-center relative z-10 hidden"
+                                onload="document.getElementById('imagePlaceholder').classList.add('hidden'); this.classList.remove('hidden');"
+                                onerror="this.onerror=function() { 
+                                    this.onerror=function() { 
+                                        this.style.display='none'; 
+                                        document.getElementById('imagePlaceholder').classList.remove('hidden');
+                                    }; 
+                                    this.src='PNG image_2.jpeg'; 
+                                };"
+                            />
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-20"></div>
+                            <span class="absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap bg-gradient-to-r from-red-500 to-orange-500 text-white font-extrabold text-[11px] px-4 py-1 rounded-full uppercase tracking-wider shadow-md shadow-orange-500/20 z-30">
+                                Lead Resource Person
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Credentials Text -->
+                <div class="md:col-span-8 space-y-5 text-center md:text-left">
+                    <div>
+                        <span class="text-xs text-orange-400 font-bold uppercase tracking-wider block">Meet Your Trainer</span>
+                        <h3 class="text-3xl md:text-4xl font-extrabold text-white heading-font mt-1">DR. MAHAM MICHELLE GILL</h3>
+                        <p class="text-sm text-gray-400 mt-1">Expert Academician & Corporate Professional Growth Coach</p>
+                    </div>
+
+                    <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                        Dr. Maham Michelle Gill brings deep academic credentials, practical communication methodologies, and dynamic leadership mentoring to help each student step comfortably into high-tier modern industry standards.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-sm text-gray-200">
+                        <div class="flex items-start gap-2.5 text-left">
+                            <span class="text-emerald-400 text-lg mt-0.5">✓</span>
+                            <span><strong>Expert Advisor:</strong> 21st Century & Interactive Communication Skills</span>
+                        </div>
+                        <div class="flex items-start gap-2.5 text-left">
+                            <span class="text-emerald-400 text-lg mt-0.5">✓</span>
+                            <span><strong>Focus Area:</strong> Career-Growth Dynamics & Professional Assets</span>
+                        </div>
+                        <div class="flex items-start gap-2.5 text-left">
+                            <span class="text-emerald-400 text-lg mt-0.5">✓</span>
+                            <span><strong>Education Background:</strong> 7+ Years of University Teaching Experience</span>
+                        </div>
+                        <div class="flex items-start gap-2.5 text-left">
+                            <span class="text-emerald-400 text-lg mt-0.5">✓</span>
+                            <span><strong>Interactive Mentorship:</strong> 1,200+ Learners Graduated Locally</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Class Schedule Information Section -->
+    <section id="schedule" class="bg-gray-950/40 py-20 border-y border-gray-900 relative z-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs text-orange-400 font-bold uppercase tracking-widest block">Class Logistics</span>
+                <h2 class="text-3xl md:text-4xl font-bold heading-font text-white">Interactive Session Schedule</h2>
+                <p class="text-gray-400 text-sm md:text-base">
+                    Carefully curated class sessions designed to comfortably fit the schedules of students, working professionals, and business owners.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Timing Option 1 -->
+                <div class="bg-gray-900/30 border border-gray-800 rounded-3xl p-6 text-center space-y-4">
+                    <span class="text-xs bg-orange-500/10 text-orange-400 font-bold px-3 py-1 rounded-full uppercase tracking-wider">Session Slot A</span>
+                    <div class="space-y-1">
+                        <span class="text-gray-400 block text-xs">Preferred Afternoon Timing</span>
+                        <span class="text-2xl font-extrabold text-white heading-font">1:00 PM - 2:00 PM</span>
+                        <span class="text-xs text-gray-500 block">Pakistan Standard Time (PKT)</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-800/60 text-xs text-gray-400">
+                        🗓️ Monday to Thursday Schedule
+                    </div>
+                </div>
+
+                <!-- Live Stream Details -->
+                <div class="bg-gradient-to-b from-orange-500/5 to-transparent border border-orange-500/20 rounded-3xl p-6 text-center flex flex-col justify-between space-y-4">
+                    <div>
+                        <span class="text-[10px] bg-red-500/10 text-red-400 font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Delivery Medium</span>
+                        <h4 class="text-xl font-bold text-white mt-4 heading-font">Google Meet Live Room</h4>
+                        <p class="text-xs text-gray-400 mt-2 leading-relaxed">
+                            Every single class is delivered in real-time. Turn on your camera, ask questions instantly, participate in group activities, and receive individual feedback.
+                        </p>
+                    </div>
+                    <span class="text-xs text-orange-400 font-bold">⭐ Link Shared 15 Mins Before Class</span>
+                </div>
+
+                <!-- Timing Option 2 -->
+                <div class="bg-gray-900/30 border border-gray-800 rounded-3xl p-6 text-center space-y-4">
+                    <span class="text-xs bg-amber-500/10 text-amber-400 font-bold px-3 py-1 rounded-full uppercase tracking-wider">Session Slot B</span>
+                    <div class="space-y-1">
+                        <span class="text-gray-400 block text-xs">Preferred Evening Timing</span>
+                        <span class="text-2xl font-extrabold text-white heading-font">7:30 PM - 8:30 PM</span>
+                        <span class="text-xs text-gray-500 block">Pakistan Standard Time (PKT)</span>
+                    </div>
+                    <div class="pt-4 border-t border-gray-800/60 text-xs text-gray-400">
+                        🗓️ Monday to Thursday Schedule
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Registration Landing Page Form Section (Embedded Directly in Web-flow) -->
+    <section id="register" class="py-20 relative z-10 max-w-4xl mx-auto px-4 scroll-mt-24">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+            <span class="text-xs text-orange-400 font-bold uppercase tracking-widest block">Instant Admissions</span>
+            <h2 class="text-3xl md:text-4xl font-bold heading-font text-white">Enroll in the Program</h2>
+            <p class="text-gray-400 text-sm md:text-base">
+                Secure your seat directly on the website. No complex apps, popups, or external downloads.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+            
+            <!-- Left Promo Details Column -->
+            <div class="md:col-span-5 space-y-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-white heading-font">Direct Verification Form</h3>
+                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">
+                        Fill in your parameters below. Once submitted, our system securely transfers you to finalize your enrollment records on Google Forms.
+                    </p>
+                </div>
+
+                <div class="space-y-3 py-4 border-y border-gray-800/80">
+                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                        <span class="text-emerald-400">✓</span> Standard Seat: Rs. 3,500
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-300">
+                        <span class="text-emerald-400 font-bold text-sm">✓ Early Bird Price: Rs. 3,000</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-orange-400">
+                        <span class="text-orange-400">⚠️</span> Promotion valid till: July 2, 2026
+                    </div>
+                </div>
+
+                <!-- QR Scan Representation for Professional Web Feel -->
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-white rounded-lg inline-block w-16 h-16">
+                        <!-- Custom Inline SVG Minimal QR representation -->
+                        <svg class="w-full h-full text-black" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2 2h6v6H2V2zm2 2v2h2V4H4zm14-2h6v6h-6V2zm2 2v2h2V4h-2zM2 16h6v6H2v-6zm2 2v2h2v-2H4zm14 0h6v6h-6v-6zm2 2v2h2v-2h-2zm-6-8h2v2h-2v-2zm2 2h2v2h-2v-2zm-4 0h2v2h-2v-2zm4 2h2v2h-2v-2zm-4-4h2v2h-2v-2zm8-2h2v2h-2V8zm-2 2h2v2h-2v-2zm-6 2h2v2H8v-2zm2-4h2v2h-2V8zm0 8h2v2h-2v-2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-[11px] text-gray-400 block font-bold uppercase tracking-wider">Fast Mobile Access</span>
+                        <span class="text-[10px] text-gray-500 block">Scan to share or open form instantly.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Active Registration Form Column -->
+            <div class="md:col-span-7 bg-gray-950/80 border border-gray-800/60 p-6 rounded-2xl">
+                
+                <!-- Registration Form -->
+                <form id="enrollForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Full Name</label>
+                        <input type="text" id="studentName" required class="w-full bg-gray-900 border border-gray-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-xl px-4 py-3 text-white text-sm outline-none transition" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">WhatsApp / Mobile Number</label>
+                        <input type="tel" id="studentPhone" required class="w-full bg-gray-900 border border-gray-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-xl px-4 py-3 text-white text-sm outline-none transition" placeholder="e.g. 03431234567">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">Preferred Session Slot</label>
+                        <select id="studentSlot" class="w-full bg-gray-900 border border-gray-800 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 rounded-xl px-4 py-3 text-white text-sm outline-none transition cursor-pointer">
+                            <option value="A">Slot A: 1:00 PM - 2:00 PM</option>
+                            <option value="B">Slot B: 7:30 PM - 8:30 PM</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="w-full mt-2 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-orange-500/15 active:scale-[0.98] transition-all cursor-pointer text-sm text-center">
+                        Secure Spot (Redirect to Verify Form)
+                    </button>
+                </form>
+
+                <!-- Success State Area inside page -->
+                <div id="successState" class="hidden text-center py-6">
+                    <div class="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Redirecting to Google Form...</h4>
+                    <p class="text-gray-400 text-xs max-w-xs mx-auto mb-6 leading-relaxed">
+                        Excellent choice, <span id="successName" class="text-white font-bold">learner</span>! We are opening the Google Form page to complete the record tracking.
+                    </p>
+                    <a id="redirectBtn" href="https://forms.gle/RUkYwRsMxM7cGZWJ6" target="_blank" class="block w-full text-center py-3 bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold rounded-xl transition text-xs">
+                        Click here if not redirected automatically
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Accordion Style FAQ Area -->
+    <section id="faqs" class="bg-gray-950/40 py-20 border-t border-gray-900 relative z-10 scroll-mt-24">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs text-orange-400 font-bold uppercase tracking-widest block">Answering Queries</span>
+                <h2 class="text-3xl md:text-4xl font-bold heading-font text-white">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleFaq('faq1')" class="w-full text-left px-6 py-5 flex justify-between items-center text-white font-bold text-sm sm:text-base outline-none cursor-pointer">
+                        <span>Is this program fully live, or are they recorded videos?</span>
+                        <span id="faq1-icon" class="text-orange-400 transition-transform duration-300 text-lg">+</span>
+                    </button>
+                    <div id="faq1" class="hidden px-6 pb-5 text-xs sm:text-sm text-gray-400 leading-relaxed border-t border-gray-800/40 pt-3">
+                        This is a 100% live training program conducted directly on Google Meet. Every class is interactive, meaning you can directly talk with the instructor, practice presenting real-time, and get live reviews.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleFaq('faq2')" class="w-full text-left px-6 py-5 flex justify-between items-center text-white font-bold text-sm sm:text-base outline-none cursor-pointer">
+                        <span>Can I change my class slot later?</span>
+                        <span id="faq2-icon" class="text-orange-400 transition-transform duration-300 text-lg">+</span>
+                    </button>
+                    <div id="faq2" class="hidden px-6 pb-5 text-xs sm:text-sm text-gray-400 leading-relaxed border-t border-gray-800/40 pt-3">
+                        Yes, if something unexpected comes up during the program, you can contact your admission coordinator to switch between Slot A (1:00 PM) and Slot B (7:30 PM) so you never miss out on live content.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleFaq('faq3')" class="w-full text-left px-6 py-5 flex justify-between items-center text-white font-bold text-sm sm:text-base outline-none cursor-pointer">
+                        <span>How do I secure the early bird Rs. 3,000 pricing?</span>
+                        <span id="faq3-icon" class="text-orange-400 transition-transform duration-300 text-lg">+</span>
+                    </button>
+                    <div id="faq3" class="hidden px-6 pb-5 text-xs sm:text-sm text-gray-400 leading-relaxed border-t border-gray-800/40 pt-3">
+                        Simply fill out the form above on this website and proceed before midnight of July 2, 2026. This secures your reservation with our coordination team.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-2xl overflow-hidden transition duration-300">
+                    <button onclick="toggleFaq('faq4')" class="w-full text-left px-6 py-5 flex justify-between items-center text-white font-bold text-sm sm:text-base outline-none cursor-pointer">
+                        <span>Will I receive a verified graduate certificate?</span>
+                        <span id="faq4-icon" class="text-orange-400 transition-transform duration-300 text-lg">+</span>
+                    </button>
+                    <div id="faq4" class="hidden px-6 pb-5 text-xs sm:text-sm text-gray-400 leading-relaxed border-t border-gray-800/40 pt-3">
+                        Absolutely. After successfully finishing the 3-week course tracks and assignments, you will receive a verifiable, professionally styled Digital Certificate highlighting your training in 21st Century Skills.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Web Footer Area -->
+    <footer class="bg-black/80 border-t border-gray-900 relative z-10 py-12">
+        <div class="max-w-6xl mx-auto px-4 space-y-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- Left brand footer column -->
+                <div class="md:col-span-2 space-y-4 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-red-500 to-orange-500 flex items-center justify-center font-extrabold text-white text-xl">
+                            S
+                        </div>
+                        <span class="text-2xl font-extrabold tracking-tight heading-font text-white">
+                            Skill<span class="text-orange-500">UP</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed max-w-sm mx-auto md:mx-0">
+                        Bridging vocational training with structural professional growth. Empowering students, professionals, and future executives with fundamental leadership, voice dynamics, and confidence.
+                    </p>
+                </div>
+
+                <!-- Navigation Columns -->
+                <div class="space-y-3 text-center md:text-left">
+                    <h5 class="text-xs text-white font-bold uppercase tracking-widest">Syllabus Navigation</h5>
+                    <ul class="text-xs text-gray-400 space-y-2">
+                        <li><a href="#curriculum" class="hover:text-orange-400 transition">What You'll Learn</a></li>
+                        <li><a href="#schedule" class="hover:text-orange-400 transition">Timing & Google Meet Slots</a></li>
+                        <li><a href="#register" class="hover:text-orange-400 transition font-semibold text-white">Enrollment Form</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct Support Contacts Column -->
+                <div class="space-y-3 text-center md:text-left">
+                    <h5 class="text-xs text-white font-bold uppercase tracking-widest">Helpline Channels</h5>
+                    <ul class="text-xs text-gray-400 space-y-2.5">
+                        <li class="flex items-center justify-center md:justify-start gap-2">
+                            <span>📞</span>
+                            <a href="tel:0343-5942243" class="font-bold text-white hover:text-orange-400 transition">0343-5942243</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-2">
+                            <span>✉️</span>
+                            <a href="mailto:info.skilluponline@gmail.com" class="hover:text-orange-400 transition">info.skilluponline@gmail.com</a>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-2">
+                            <span>📝</span>
+                            <a href="https://forms.gle/RUkYwRsMxM7cGZWJ6" target="_blank" class="hover:text-orange-400 transition underline">Forms Dashboard Portal</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright footer -->
+            <div class="pt-8 border-t border-gray-900/60 text-center text-[11px] text-gray-500">
+                <p>© 2026 SkillUP. Empowering high-performance leaders with crucial 21st-century talents. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS Interaction Script -->
+    <script>
+        const enrollForm = document.getElementById('enrollForm');
+        const successState = document.getElementById('successState');
+        const successName = document.getElementById('successName');
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const studentNameVal = document.getElementById('studentName').value;
+            successName.textContent = studentNameVal;
+            
+            // Toggle form visual state
+            enrollForm.classList.add('hidden');
+            successState.classList.remove('hidden');
+            
+            // Redirect to the Google forms URL in 1.8 seconds
+            setTimeout(() => {
+                window.open("https://forms.gle/RUkYwRsMxM7cGZWJ6", "_blank");
+            }, 1800);
+        }
+
+        // Toggle Syllabus Accordion Sections
+        function toggleModule(id) {
+            const block = document.getElementById(id);
+            const arrow = document.getElementById(`${id}-arrow`);
+            const isHidden = block.classList.contains('hidden');
+            
+            if (isHidden) {
+                block.classList.remove('hidden');
+                arrow.textContent = '▲';
+                arrow.classList.add('rotate-180');
+            } else {
+                block.classList.add('hidden');
+                arrow.textContent = '▼';
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        // Toggle FAQ Accordion sections
+        function toggleFaq(id) {
+            const answer = document.getElementById(id);
+            const icon = document.getElementById(`${id}-icon`);
+            const isHidden = answer.classList.contains('hidden');
+            
+            if (isHidden) {
+                answer.classList.remove('hidden');
+                icon.textContent = '−';
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.textContent = '+';
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
